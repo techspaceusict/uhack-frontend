@@ -927,6 +927,105 @@ textarea.input {
   text-align: center;
 }
 
+
+/*=========================================================
+  SPEAKERS
+===========================================================*/
+
+#speakers {
+  background-color: #F9F9FA;
+}
+
+.speaker {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.speaker:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.speaker:hover:after {
+  opacity: 0.8;
+}
+
+.speaker .speaker-img>img {
+  width: 100%
+}
+
+.speaker .speaker-body {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+
+.speaker .speaker-content {
+  position: relative;
+  padding: 30px;
+  background: #dd0a37;
+  text-align: right;
+  z-index: 20;
+}
+
+.speaker .speaker-content>h2 {
+  color: #FFF;
+}
+
+.speaker .speaker-content>span {
+  color: #fff;
+}
+
+.speaker .speaker-social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  z-index: 5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.speaker .speaker-social>a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFF;
+  background: #dd0a37;
+  z-index: 15;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+.speaker .speaker-social a+a {
+  margin-left: -4px;
+  border-left: 1px solid #f8f8ff33;
+}
+
+.speaker .speaker-social a:hover {
+  opacity: 0.8;
+}
+
+.speaker:hover .speaker-social {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
 /*=========================================================
 	SPONSORS
 ===========================================================*/
